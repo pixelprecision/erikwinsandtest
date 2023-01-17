@@ -1,0 +1,59 @@
+{
+  "contact": {
+    "firstName": "Brenden",
+    "lastName": "Leib",
+    "phone": [
+      {
+      "phoneNumber": "555-555-5555",
+      "title": "Work",
+      "receiveSms": true,
+      },
+      {
+      "phoneNumber": "444-444-4444",
+      "title": "Home",
+      "receiveSms": true,
+      },
+    ],
+    "email": "brendenkepler@gmail.com",
+    "company": "Kepler",
+    "address": {
+      "city": "Bellevue",
+      "country": "United States",
+      "state": "Washington",
+      "street": "555 Main St",
+      "zipcode": "98103",
+      "secondLine": "Apt 102",
+    },
+    "discoveries": [],
+  },
+  "job": [
+    {
+    "type": "Automotive",
+    "make": "Honda",
+    "model": "Civic",
+    "carType": "Sedan",
+    "year": "2022",
+    "color": "Blue",
+    "vin": "V57TY583RTYE78T",
+    "license": "104WRE",
+    "services": [
+        {
+      "type": "window tint",
+      "mobileInstall": true,
+      "applications": [
+            {
+        "area": "Front Window",
+        "films": [
+                {
+          "name": "Kepler",
+          "price": "450.00",
+                }
+              ],
+        "filmRemoval": true,
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
