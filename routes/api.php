@@ -23,8 +23,8 @@ use App\Http\Controllers\JobController;
 Route::post('/test', [JobController::class, 'index']);
 
 // == Routes for Job CRUD
-// Route::get('/jobs', [JobController::class, 'getAll']);
-// Route::post('/jobs', [JobController::class, 'create']);
-// Route::patch('/jobs/{id}', [JobController::class, 'update']);
-// Route::delete('/jobs/{id}', [JobController::class, 'delete']);
+Route::get('/jobs', [JobController::class, 'getAll']);
+Route::post('/jobs', [JobController::class, 'create']);
+Route::patch('/jobs/{id}', [JobController::class, 'update']);
+Route::delete('/jobs/{id}', [JobController::class, 'remove']);
 
