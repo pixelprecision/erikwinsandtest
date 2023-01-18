@@ -63,4 +63,46 @@ class JobController extends Controller
 
         return response()->json(['job_id' => $jobOnDb->id]);
     }
+
+    // This will probably be named 'index'.
+    public function getAll(Request $request)
+    {
+        // Validate Request (if filters like pagination are supported)
+
+        // Fetch Jobs (including related models) using any filters (when applicable)
+
+        // Return list of jobs
+        return response()->json(['jobs' => 'list of jobs']);
+    }
+
+    public function create(Request $request)
+    {
+        // Validate Request
+
+        // Create Job on Db (including related models)
+
+        // Return created Job
+        return response()->json(['job' => 'new job object']);
+    }
+
+    public function update(Request $request, $id)
+    {
+        // Validate Request
+
+        // Update Job on Db (including related models)
+
+        // Return updated Job
+        return response()->json(['job' => 'updated job object']);
+    }
+
+    public function remove(Request $request, $id)
+    {
+        // Validate Request
+
+        // Remove Job on Db (including related models - we'll probably do a soft delete, we can even
+        //                   have a restore functionality)
+
+        // Return true or false
+        return response()->json(['removed' => 'true|false']);
+    }
 }
