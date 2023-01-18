@@ -11,6 +11,11 @@ class Contact extends Model
 
     protected $guarded = ['id'];
 
+    protected $casts = [
+        'address' => 'array',
+        'phone' => 'array',
+    ];
+
     public function jobs()
     {
         return $this->hasMany(Job::class);

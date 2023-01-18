@@ -23,6 +23,8 @@ class JobController extends Controller
                 'last_name' => $contact['lastName'],
                 'email' => $contact['email'],
                 'company_name' => $contact['company'],
+                'address' => $contact['address'],
+                'phone' => $contact['phone'],
             ]);
 
             // Create Job
